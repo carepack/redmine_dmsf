@@ -27,10 +27,10 @@
 ################################################################################################
 
 # Redmine installation directory
-$redmine_root = '/opt/redmine'
+$redmine_root = '/opt/redmine/redmine-3.3.0'
 
 # DMSF document location $redmine_root/$files
-$files = 'dmsf'
+$files = '/files/dmsf'
 
 # scriptindex binary path 
 $scriptindex  = '/usr/bin/scriptindex'
@@ -39,7 +39,7 @@ $scriptindex  = '/usr/bin/scriptindex'
 $omindex      = '/usr/bin/omindex'
 
 # Directory containing xapian databases for omindex (Attachments indexing)
-$dbrootpath   = '/var/tmp/dmsf-index'
+$dbrootpath   = '/var/tmp/omindex/german'
 
 # Verbose output, values of 0 no verbose, greater than 0 verbose output
 $verbose      = 0
@@ -47,7 +47,7 @@ $verbose      = 0
 # Define stemmed languages to index attachments Eg. [ 'english', 'italian', 'spanish' ]
 # Repository database will be always indexed in english
 # Available languages are danish dutch english finnish french german german2 hungarian italian kraaij_pohlmann lovins norwegian porter portuguese romanian russian spanish swedish turkish:  
-$stem_langs	= ['english']
+$stem_langs	= ['german']
 
 # Project identifiers that will be indexed eg. [ 'prj_id1', 'prj_id2' ]
 $projects	= [ 'prj_id1', 'prj_id2' ]
